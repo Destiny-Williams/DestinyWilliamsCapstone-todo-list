@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <link rel="stylesheet" href="index.css">
+
+    <div id="nameEntry" 
+    style="background-color: lightgray;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+    align-content: center;
+    padding: 5px;">
+      <h1>
+        Welcome
+      </h1>
+      <center>
+        <input type="text" id="nameInput"
+        class="centerTextBox" placeholder="Enter Your Name...">
+      </center>
+      <br>
+      <br><br>
+      <button id="getStartedBtn"
+      style="background-color: #ADD0C3;
+      color: white;
+      height: 40px;
+      width: 270px;
+      border-radius: 19px;"
+      >Let's Get Started</button>
+    </div>
+
+    <div id="listDiv">
+    <div id="myDIV" class="header">
+      <p id="helloText"></p>
+      <h2>Welcome to your positives to do list.</h2>
+
+      <h4>Lets start by giving your task a title:</h4>
+      <input type="text" id="myInput" placeholder="Title...">
+      <p>
+        Lost on ideas? 
+        <button id ="surpriseMeBtn">Surprise me!</button>
+        </p>
+
+      <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+    
+    <ul id="myUL">
+      <li>Eat Breakfast</li>
+      <li class="checked">Feed the pups</li>
+      <li>Log into zoom meeting</li>
+      <li>9:00Am squad meeting</li>
+      <li>10:00Am Lecture begins</li>
+      <li>12:30Pm Lunch break for an hour</li>
+    </ul>
+
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
