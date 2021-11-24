@@ -37,28 +37,22 @@
       <h2>Welcome to your positives to do list.</h2>
 
       <h4>Lets start by giving your task a title:</h4>
-      <input type="text" id="myInput" placeholder="Title...">
+      <input type="text" id="taskTitle" placeholder="Title...">
       <p>
         Lost on ideas? 
         <button id ="surpriseMeBtn">Surprise me!</button>
         </p>
 
-      <span onclick="newElement()" class="addBtn">Add</span>
+      <button id="addBtn">Add</button>
     </div>
     
     <ul id="myUL">
-      <li>Eat Breakfast</li>
-      <li class="checked">Feed the pups</li>
-      <li>Log into zoom meeting</li>
-      <li>9:00Am squad meeting</li>
-      <li>10:00Am Lecture begins</li>
-      <li>12:30Pm Lunch break for an hour</li>
     </ul>
 
 
     </div>
 
-
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
