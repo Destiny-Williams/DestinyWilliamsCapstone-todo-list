@@ -1,58 +1,65 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <body>
+    <link rel="stylesheet" href="index.css" />
 
-    <link rel="stylesheet" href="index.css">
-
-    <div id="nameEntry" 
-    style="background-color: lightgray;
-    border-radius: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    text-align: center;
-    align-content: center;
-    padding: 5px;">
-      <h1>
-        Welcome
-      </h1>
+    <div
+      id="nameEntry"
+      style="
+        background-color: lightgray;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        text-align: center;
+        align-content: center;
+        padding: 5px;
+      "
+    >
+      <h1>Welcome</h1>
       <center>
-        <input type="text" id="nameInput"
-        class="centerTextBox" placeholder="Enter Your Name...">
+        <input
+          type="text"
+          id="nameInput"
+          class="centerTextBox"
+          placeholder="Enter Your Name..."
+        />
       </center>
-      <br>
-      <br><br>
-      <button id="getStartedBtn"
-      style="background-color: #ADD0C3;
-      color: white;
-      height: 40px;
-      width: 270px;
-      border-radius: 19px;"
-      >Let's Get Started</button>
+      <br />
+      <br /><br />
+      <button
+        id="getStartedBtn"
+        style="
+          background-color: #add0c3;
+          color: white;
+          height: 40px;
+          width: 270px;
+          border-radius: 19px;
+        "
+      >
+        Let's Get Started
+      </button>
     </div>
 
     <div id="listDiv">
-    <div id="myDIV" class="header">
-      <p id="helloText"></p>
-      <h2>Welcome to your positives to do list.</h2>
+      <div id="myDIV" class="header">
+        <p id="helloText"></p>
+        <h2>Welcome to your positives to do list.</h2>
 
-      <h4>Lets start by giving your task a title:</h4>
-      <input type="text" id="taskTitle" placeholder="Title...">
-      <p>
-        Lost on ideas? 
-        <button id ="surpriseMeBtn">Surprise me!</button>
+        <h4>Lets start by giving your task a title:</h4>
+        <input type="text" id="taskTitle" placeholder="Title..." />
+        <p>
+          Lost on ideas?
+          <button id="surpriseMeBtn">Surprise me!</button>
         </p>
 
-      <button id="addBtn">Add</button>
-    </div>
-    
-    <ul id="myUL">
-    </ul>
+        <button id="addBtn">Add</button>
+      </div>
 
-
+      <ul id="myUL"></ul>
     </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
