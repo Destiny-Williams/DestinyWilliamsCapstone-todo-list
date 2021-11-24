@@ -27,4 +27,9 @@ app.get("/api/daily motivation", (req, res) => {
   
   /// bottom of the code:
   
-    app.listen(4000, () => console.log("Server running on 4000"));
+
+  const port = process.env.PORT || 3000
+
+  app.listen(port, () => {
+    console.log(`Listening on port ${port}`)
+  })
