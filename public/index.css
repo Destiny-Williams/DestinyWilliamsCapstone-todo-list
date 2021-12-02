@@ -1,9 +1,25 @@
 /* Include the padding and border in an element's total width and height */
-* {
-    box-sizing: border-box;
- 
-  }
-  
+* 
+.container ul {
+  list-style-type: none;
+  margin: 10;
+  padding: 10;
+  overflow: hidden;
+  background-color: rgb(72, 139, 140);
+}
+
+.container li {
+  float: left;
+}
+
+.container li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 24px 16px;
+  text-decoration: none;
+}
+
   /* Remove margins and padding from the list */
   ul {
     margin: 0;
@@ -19,6 +35,8 @@
     font-size: 18px;
     transition: 0.2s;
   
+/* animation is above via transition.  */
+
     /* make the list items unselectable */
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -72,7 +90,7 @@
   
   /* Style the header */
   .header {
-    background-color: hsl(216, 87%, 63%);
+    background-color: hsl(28, 30%, 76%);
     padding: 30px 40px;
     color: white;
     text-align: center;
@@ -85,6 +103,20 @@
     clear: both;
   }
   
+  /* body {
+    background-image: linear-gradient(120deg, #e2ce8e, #f3aa95);
+  }
+   */
+
+
+   body {
+    background-image: url("https://wallpaper.csplague.com/wp-content/uploads/2020/03/100-Download-premium-vector-of-Ripped-notes-background-frame-vector-683x1024.jpg");
+    background-color: #cccccc;
+    background-position: center;
+background-repeat: repeat;
+background-size: 100%, 100%
+   }
+
   /* Style the input */
   /* input {
     margin: 0;

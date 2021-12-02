@@ -3,6 +3,24 @@
   <body>
     <link rel="stylesheet" href="index.css" />
 
+    <header>
+
+    <div class="container">
+      <nav>
+        <ul>
+           <li><a href="">Home</a></li>
+            <li><a href="https://mashable.com/article/best-motivational-podcasts">Find some Motivation</a></li>
+            <li><a href="https://www.youtube.com/watch?v=cWW7Q4eJr8w"> Help planning your day</a></li>
+            <li><a href="https://www.youtube.com/watch?v=tlUcmD0zPI4">Music for focus and creativity</a></li>
+      </ul> 
+    
+  
+
+    </nav> 
+
+    </div>
+    </header>
+
     <div
       id="nameEntry"
       style="
@@ -16,7 +34,9 @@
         padding: 5px;
       "
     >
-      <h1>Welcome</h1>
+
+    
+      <h1>Welcome to your To Do list </h1>
       <center>
         <input
           type="text"
@@ -46,11 +66,11 @@
         <p id="helloText"></p>
         <h2>Welcome to your positives to do list.</h2>
 
-        <h4>Lets start by giving your task a title:</h4>
+        <h4>Lets start by entering your task:</h4>
         <input type="text" id="taskTitle" placeholder="Title..." />
         <p>
           Lost on ideas?
-          <button id="surpriseMeBtn">Surprise me!</button>
+          <button id="surpriseMeBtn">We have a few!</button>
         </p>
 
         <button id="addBtn">Add</button>
@@ -58,6 +78,10 @@
 
       <ul id="myUL"></ul>
     </div>
+
+    
+      <!-- <button onclick="alert('Congratulations you did it!')id="areyoudonebutton">Done for the day?!</button>
+     -->
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>

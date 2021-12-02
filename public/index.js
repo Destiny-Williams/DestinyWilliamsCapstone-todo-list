@@ -18,6 +18,8 @@ const listItems = [
   },
 ];
 
+
+
 const addToList = () => {
   const newItem = document.getElementById("taskTitle");
   if (newItem.value) {
