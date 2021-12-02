@@ -13,9 +13,9 @@ const handleErrorAsync = func => async (req, res, next) => {
 
 
 const getDailyMotivation = (req, res) => {
-  const motivation = ["Change is happening in your life, so go with the flow!",
-                     "Don’t be discouraged, because every wrong attempt discarded is another step forward",
-                     "Don’t let your limitations overshadow your talents.","Go for the gold today! You’ll be the champion of whatever.","If you wish to see the best in others, show the best of yourself.","It is honorable to stand up for what is right, however unpopular it seems.",
+  const motivation = ["Take 5, to do something that will make you look good, if you look good you feel good.",
+                     "Don’t be discouraged, make plans on the steps you need to take to move forward",
+                     "List something small.","Take one step at a time","If you wish to see the best in others, show the best of yourself.","Go for a walk, and get some fresh air.","Get up and move your body.",
   ];
 
   // choose random fortunes
