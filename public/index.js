@@ -58,7 +58,16 @@ const getList = () => {
         >${x.description}</li>`;
   });
   document.getElementById("myUL").innerHTML = array.join("");
+
+  
 };
+// delete from list button? 
+// var completeButtons =
+//   document.getElementsByClassName("Complete");
+//     for(var i = 0; i < completeButtons.length; i++){
+//       completeButtons[i].addEventListener('click', completeListItem, false);
+//     }
+
 
 const toggleItem = (id) => {
   let selectedItem = listItems.find((item) => item.id == id);

@@ -1,0 +1,6 @@
+List of MVP Features*
+
+User can enter name for personalization of todo list.
+user can enter task to be completed. 
+user can get randomized task ideas to submit.
+user can visit supportive applications though the task bar. 
