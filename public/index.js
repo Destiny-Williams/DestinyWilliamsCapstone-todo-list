@@ -1,24 +1,12 @@
 let personName = "";
-let currentIndex = 3;
+let currentIndex = 1;
 const listItems = [
   {
     id: 1,
     complete: true,
     description: "Start your todo list.",
-  },
-  // {
-  //   id: 2,
-  //   complete: false,
-  //   description: "Item 2",
-  // },
-  // {
-  //   id: 3,
-  //   complete: false,
-  //   description: "Item 3",
-  // },
+  }
 ];
-
-
 
 const addToList = () => {
   const newItem = document.getElementById("taskTitle");
@@ -34,7 +22,6 @@ const addToList = () => {
   } else {
     alert("Please enter something for your task");
   }
-  
 };
 
 const showList = () => {
@@ -54,20 +41,25 @@ const getList = () => {
   const array = listItems.map((x) => {
     return `<li
         ${x.complete ? 'class="checked"' : ""}
-        onclick="toggleItem(${x.id})"
-        >${x.description}</li>`;
+        onclick="toggleItem(${x.id})">
+        <div style="display: flex; width: 100%"> 
+        ${x.description}
+          <button 
+           style="margin-right: 10px;margin-left: auto;"
+           onclick="deleteItem(${x.id})">
+            Delete
+          </button>
+        </div>    
+        </li>`;
   });
   document.getElementById("myUL").innerHTML = array.join("");
-
-  
 };
-// delete from list button? 
+// delete from list button?
 // var completeButtons =
 //   document.getElementsByClassName("Complete");
 //     for(var i = 0; i < completeButtons.length; i++){
 //       completeButtons[i].addEventListener('click', completeListItem, false);
 //     }
-
 
 const toggleItem = (id) => {
   let selectedItem = listItems.find((item) => item.id == id);
@@ -76,10 +68,22 @@ const toggleItem = (id) => {
   getList();
 };
 
+const deleteItem = (id) => {
+  let selectedItem = listItems.find((item) => item.id == id);
+  listItems.pop(selectedItem);
+  getList();
+};
+
 const surpriseMe = () => {
-   axios.get("/api/dailymotivation").then(({ data }) => {
+  axios.get("/api/dailymotivation").then(({ data }) => {
     document.getElementById("taskTitle").value = data;
-     });
+  });
+};
+
+const postList = () => {
+  axios.post("/api/areYouDoneYet", listItems).then(({ data }) => {
+    alert(data);
+  });
 };
 
 //add listeners

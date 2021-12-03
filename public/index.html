@@ -4,21 +4,28 @@
     <link rel="stylesheet" href="index.css" />
 
     <header>
-
-    <div class="container">
-      <nav>
-        <ul>
-           <li><a href="">Home</a></li>
-            <li><a href="https://mashable.com/article/best-motivational-podcasts">Find some Motivation</a></li>
-            <li><a href="https://www.youtube.com/watch?v=cWW7Q4eJr8w"> Need help planning your day</a></li>
-            <li><a href="https://www.youtube.com/watch?v=tlUcmD0zPI4">Music for focus and creativity</a></li>
-      </ul> 
-    
-  
-
-    </nav> 
-
-    </div>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li>
+              <a href="https://mashable.com/article/best-motivational-podcasts"
+                >Find some Motivation</a
+              >
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=cWW7Q4eJr8w">
+                Need help planning your day</a
+              >
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=tlUcmD0zPI4"
+                >Music for focus and creativity</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <div
@@ -34,9 +41,7 @@
         padding: 5px;
       "
     >
-
-    
-      <h1>Welcome to your To Do list </h1>
+      <h1>Welcome to your To Do list</h1>
       <center>
         <input
           type="text"
@@ -74,17 +79,18 @@
         </p>
 
         <button id="addBtn">Add</button>
-        
       </div>
- 
-      <ul id="myUL"></ul>
-        <!-- <button onclick='remove()'>Remove/Done</button> -->
-     
-    </div>
 
-    
-      <!-- <button onclick="alert('Congratulations you did it!')id="areyoudonebutton">Done for the day?!</button>
-     -->
+      <ul id="myUL"></ul>
+
+      <button
+        onclick="postList()"
+        style="width: 100vw; margin-top: 50px"
+        id="areyoudonebutton"
+      >
+        Done for the day?!
+      </button>
+    </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>
