@@ -90,10 +90,11 @@ ul li.checked::before {
 
 /* Style the header */
 .header {
-  background-color: hsl(28, 30%, 76%);
+  background-color: hsl(304, 13%, 76%);
   padding: 30px 40px;
   color: white;
   text-align: center;
+  border-radius: 8%;
 }
 
 /* Clear floats after the header */
