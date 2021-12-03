@@ -4,18 +4,18 @@ const listItems = [
   {
     id: 1,
     complete: true,
-    description: "Item 1",
+    description: "Start your todo list.",
   },
-  {
-    id: 2,
-    complete: false,
-    description: "Item 2",
-  },
-  {
-    id: 3,
-    complete: false,
-    description: "Item 3",
-  },
+  // {
+  //   id: 2,
+  //   complete: false,
+  //   description: "Item 2",
+  // },
+  // {
+  //   id: 3,
+  //   complete: false,
+  //   description: "Item 3",
+  // },
 ];
 
 
@@ -34,6 +34,7 @@ const addToList = () => {
   } else {
     alert("Please enter something for your task");
   }
+  
 };
 
 const showList = () => {
