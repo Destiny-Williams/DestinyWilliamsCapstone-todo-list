@@ -33,7 +33,7 @@ const areYouDoneYet = (req, res) => {
   res
     .status(200)
     .send(
-      incompleteTasks.length > 0 ? "Are you really done?" : "Yes! You did it!"
+      incompleteTasks.length == 0
     );
 };
 

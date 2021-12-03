@@ -54,12 +54,6 @@ const getList = () => {
   });
   document.getElementById("myUL").innerHTML = array.join("");
 };
-// delete from list button?
-// var completeButtons =
-//   document.getElementsByClassName("Complete");
-//     for(var i = 0; i < completeButtons.length; i++){
-//       completeButtons[i].addEventListener('click', completeListItem, false);
-//     }
 
 const toggleItem = (id) => {
   let selectedItem = listItems.find((item) => item.id == id);
@@ -81,9 +75,19 @@ const surpriseMe = () => {
 };
 
 const postList = () => {
-  axios.post("/api/areYouDoneYet", listItems).then(({ data }) => {
-    alert(data);
-  });
+
+
+   axios.post("/api/areYouDoneYet", listItems).then(({ data }) => {
+     if (data)
+     {
+      party.confetti(document.getElementById("areyoudonebutton"), {
+        count: party.variation.range(20, 40)
+    });
+     }
+     else{
+       alert("Are you really done?")
+     }
+   });
 };
 
 //add listeners
