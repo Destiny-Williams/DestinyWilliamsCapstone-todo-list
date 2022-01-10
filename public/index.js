@@ -8,6 +8,8 @@ const listItems = [
   }
 ];
 
+
+// checks if a text value is in the new item text box, and if so add it to the list of todo items. 
 const addToList = () => {
   const newItem = document.getElementById("taskTitle");
   if (newItem.value) {
@@ -24,6 +26,7 @@ const addToList = () => {
   }
 };
 
+// If the user has entered a name, show the to do list, and hide the name entry.
 const showList = () => {
   personName = document.getElementById("nameInput").value;
 
@@ -37,6 +40,7 @@ const showList = () => {
   }
 };
 
+// This renders the to-do list using HTML. 
 const getList = () => {
   const array = listItems.map((x) => {
     return `<li
@@ -55,6 +59,8 @@ const getList = () => {
   document.getElementById("myUL").innerHTML = array.join("");
 };
 
+
+// toggle Item, Toggles the item between completed and not completed. 
 const toggleItem = (id) => {
   let selectedItem = listItems.find((item) => item.id == id);
   selectedItem.complete = !selectedItem.complete;
@@ -62,21 +68,25 @@ const toggleItem = (id) => {
   getList();
 };
 
+
+// delete Item, Deletes item, if selected. 
 const deleteItem = (id) => {
   let selectedItem = listItems.find((item) => item.id == id);
   listItems.pop(selectedItem);
   getList();
 };
 
+// Supriseme , called the API endpoint to get a new item.
 const surpriseMe = () => {
   axios.get("/api/dailymotivation").then(({ data }) => {
     document.getElementById("taskTitle").value = data;
   });
 };
 
+
+// sends the list of the to-do times to the API to check if they are complete.
+// if they are complete show some confetti. 
 const postList = () => {
-
-
    axios.post("/api/areYouDoneYet", listItems).then(({ data }) => {
      if (data)
      {
@@ -90,7 +100,7 @@ const postList = () => {
    });
 };
 
-//add listeners
+// listeners
 document.getElementById("getStartedBtn").addEventListener("click", showList);
 document.getElementById("addBtn").addEventListener("click", addToList);
 document.getElementById("surpriseMeBtn").addEventListener("click", surpriseMe);
