@@ -12,3 +12,5 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
+
+// this file sets up the web server, to be accessed by the client.

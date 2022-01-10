@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-
+// this is in able ing the express routing module. (express is my library to host my frontend and backend. )
 
 // This is the middle ware(gets injected into our calls) that I used to gracefully handles errors in API calls. 
 const handleErrorAsync = (func) => async (req, res, next) => {

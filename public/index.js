@@ -7,7 +7,7 @@ const listItems = [
     description: "Start your todo list.",
   }
 ];
-
+// ^^^^ initiate the variable on the page above! ^^^^^
 
 // checks if a text value is in the new item text box, and if so add it to the list of todo items. 
 const addToList = () => {
@@ -99,6 +99,9 @@ const postList = () => {
      }
    });
 };
+// axios is an HTTP client that makes request to a server.
+
+
 
 // listeners
 document.getElementById("getStartedBtn").addEventListener("click", showList);
