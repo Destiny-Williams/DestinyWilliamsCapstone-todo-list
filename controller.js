@@ -44,7 +44,7 @@ const areYouDoneYet = (req, res) => {
 };
 
 
-// This defines the routs and methods used by this controller. 
+// This defines the routs and methods used by this controller. both are HTTP request. 
 router.get("/dailymotivation", handleErrorAsync(getDailyMotivation));
 router.post("/areyoudoneyet", handleErrorAsync(areYouDoneYet));
 

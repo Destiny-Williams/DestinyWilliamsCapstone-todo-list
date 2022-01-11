@@ -40,7 +40,7 @@ const showList = () => {
   }
 };
 
-// This renders the to-do list using HTML. 
+// This renders the to-do list using HTML. "click" 
 const getList = () => {
   const array = listItems.map((x) => {
     return `<li
@@ -82,6 +82,7 @@ const surpriseMe = () => {
     document.getElementById("taskTitle").value = data;
   });
 };
+
 
 
 // sends the list of the to-do times to the API to check if they are complete.
